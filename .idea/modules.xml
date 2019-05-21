@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SNAPSHOT/SNAPSHOT.iml" filepath="$PROJECT_DIR$/SNAPSHOT/SNAPSHOT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appengine-try-java.iml" filepath="$PROJECT_DIR$/appengine-try-java.iml" />
     </modules>
   </component>
 </project>
