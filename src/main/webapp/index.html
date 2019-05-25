@@ -1,16 +1,89 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Пример 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="sticky-footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" async="" src="js.js"></script>
 </head>
 <body>
-<H1>Привет!qq1111122</H1>
-<P>Это простейший пример HTML-документа.</P>
-<P>Этот *.html-файл может быть одновременно открыт
-    и в Notepad, и в Netscape.
-    Сохранив изменения в Notepad, просто нажмите кнопку
-    Reload ('перезагрузить') в Netscape, чтобы увидеть
-    эти изменения реализованными в HTML-документе.</P>
+
+
+<!-- Begin page content -->
+<main role="main" class="container">
+    <h1 class="mt-5">Sticky footer</h1>
+
+
+
+    <table class="center" cellspacing="7">
+        <tbody>
+        <tr>
+            <td colspan="7"><textarea class="form-control" id="soursText">1+1+1-2-2-2-2</textarea>
+                <div id="error" class="invalid-feedback">
+                </div>
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="2">Ответ:</td>
+            <td colspan="4">
+
+                <div class="h4" id="Solve"></div>
+            </td>
+        </tr>
+        <tr>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('7');" title="7">7</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('8');" title="8">8</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('9');" title="9">9</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput(' ( ');" title="(">(</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput(' ) ');" title=")">)</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('sin(');" title="sin">sin</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('abs(');" title="abs">abs</a></td>
+        </tr>
+        <tr>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('4');" title="4">4</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('5');" title="5">5</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('6');" title="6">6</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput(' * ');" title="х">×</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput(' / ');" title="÷">÷</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('cos(');" title="cos">cos</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('deg(');" title="deg">deg</a></td>
+        </tr>
+        <tr>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('1');" title="1">1</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('2');" title="2">2</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('3');" title="3">3</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput(' + ');" title="+">+</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput(' - ');" title="-">–</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('sqrt(');" title="sqrt">sqrt</a>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('rad(');" title="rad">rad</a></td>
+            </td>
+
+        </tr>
+        <tr>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('0');" title="0">0</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('.');" title=".">.</a></td>
+            <td><a class="calButton btn btn-outline-primary" href="javascript:CalcInput('00');" title="00">00</a></td>
+            <td colspan="2"><a class="calButton btn btn-primary" href="javascript:CalcSolve();" title="=">=</a></td>
+            <td colspan="2"><a class="calButton btn btn-primary" href="javascript:CalcClear();" title="=">Очистить</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+</footer>
+
+
 </body>
 </html>
