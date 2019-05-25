@@ -249,12 +249,12 @@ public class Parser {
             String B = buf.substring(i, i + group.length());
 
             if (!B.equals(group) || i != match.start()) {
-                throw new MyException("Parser недопустимые символы или функции в строке  ", b, i, match.start());
+                throw new MyException("Недопустимые недопустимые символы или функции в строке  ", b, i, match.start());
             }
             i = i + group.length();
         }
         if (i != buf.length()) {
-            throw new MyException("Parser недопустимые символы или функции в строке  ", b, i, b.length());
+            throw new MyException("Недопустимые символы или функции в строке  ", b, i, b.length());
         }
         return b;
     }
