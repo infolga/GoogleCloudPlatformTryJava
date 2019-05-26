@@ -6,6 +6,7 @@ html {
 }
 body {
     margin-bottom: 60px; /* Margin bottom by footer height */
+    background: url("https://html5book.ru/wp-content/uploads/2015/07/background45.jpg");
 }
 .footer {
     position: absolute;
@@ -35,10 +36,19 @@ body {
 }
 .center {
     margin: auto;
-    width: 50%;
+    width: 60%;
     padding: 10px;
     max-width: 400px;
+    height: 300px;
 }
 td{
     padding: 5px;
+}
+
+h1 {
+    color: blue;
+    font-size: 120pt;
+    text-transform: capitalize;
+    height: 60px;
+    text-align: center;
 }
